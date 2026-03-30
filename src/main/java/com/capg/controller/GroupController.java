@@ -15,8 +15,15 @@ public class GroupController {
     @Autowired
     private GroupService groupService;
 
+    // Get all groups
     @GetMapping
     public List<GroupDTO> getAllGroups() {
         return groupService.getAllGroups();
+    }
+
+    // Get group by ID
+    @GetMapping("/{id}")
+    public GroupDTO getGroupById(@PathVariable Integer id) {
+        return groupService.getGroupById(id);
     }
 }

@@ -18,7 +18,6 @@ public class GroupDTO {
         this.adminEmail = adminEmail;
     }
 
-    // getters
     public Integer getGroupID() { return groupID; }
     public String getGroupName() { return groupName; }
     public Integer getAdminID() { return adminID; }
